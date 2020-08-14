@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    color: #515151;
+}
+/* header with logo & nav bar */
+.navbar-header {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 32px;
+} 
+.logo-colmar, .logo-academy {
+    font-size: 16px;
+    margin: auto;
+}
+.logo-colmar {
+    font-weight: bold;
+}
+.logo-academy {
+    color: #9b9b9b;
+}
+.navbar-mobile, .navbar-desktop {
+    list-style-type: none;
+    display: flex;
+}
+.navbar-desktop li {
+    color: #515151;
+    font-size: 16px;
+    padding: 0 0 0 16px;
+}
+.navbar-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
