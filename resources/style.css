@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
 }
 /* UTILITY CLASSES*/
 .u-bold { font-weight: bold;}
@@ -36,17 +37,18 @@ body {
     background-color: white;
     position: fixed;
     box-sizing: border-box;
-    justify-content: space-evenly;
     padding: 0 24px;
     height: 64px;
     width: 100%;
 }
 .navbar-mobile {
-    width: 100%;
-    box-sizing: border-box;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
-    
+    padding: 0 24px;
     }
+
 .logo img {
     height: 32px;
 } 
@@ -60,10 +62,7 @@ body {
 .logo-academy {
     color: #9c9c9c;
 }
-.navbar-mobile, .navbar-desktop {
-    list-style-type: none;
-    display: flex;
-}
+
 .navbar-desktop li {
     font-size: 16px;
     padding: 0 0 0 16px;
@@ -269,6 +268,7 @@ ul {
 }
 .thesis-article-text h2 {
     font-size: 22px;
+    text-align: left;
 }
 .thesis-article-text p {
     font-size: 18px;
@@ -276,6 +276,7 @@ ul {
     color: #9b9b9b;
     font-weight: normal;
     padding: 16px 0;
+    text-align: left;
 }
 .thesis-article-text .p-12-32 {
     padding: 12px 0 32px 16px;
