@@ -8,31 +8,181 @@
 </head>
 <body>
      <!-- header with logo & nav bar -->
-    <header class="navbar-header">
-        <div class="logo mobile-hidden">
+    <header class="navbar-header u-flex u-center">
+        <div class="logo u-flex u-center mobile-hidden">
             <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo lion">
-            <span class="logo-colmar">COLMAR</span>
+            <span class="logo-colmar u-bold">COLMAR</span>
             <span class="logo-academy">ACADEMY</span>
         </div>
-        <nav class="navbar">
-            <ul class="navbar-mobile desktop-hidden">
-                <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="colmar lion icon"></a></li>
-                <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="on campus icon"></a></li>
-                <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online icon"></a></li>
-                <li><a href="#"><img src="./resources/images/ic-login.svg" alt="sign in icon"></a></li>
+        <nav class="navbar u-flex">
+            <ul class="navbar-mobile u-flex desktop-hidden">
+                <li><a href="#" target="_blank"><img src="./resources/images/ic-logo.svg" alt="colmar lion icon"></a></li>
+                <li><a href="#" target="_blank"><img src="./resources/images/ic-on-campus.svg" alt="on campus icon"></a></li>
+                <li><a href="#" target="_blank"><img src="./resources/images/ic-online.svg" alt="online icon"></a></li>
+                <li><a href="#" target="_blank"><img src="./resources/images/ic-login.svg" alt="sign in icon"></a></li>
             </ul>
             <ul class="navbar-desktop mobile-hidden">
-                <li><a href="#">On campus</a></li>
-                <li><a href="#">Online</a></li>
-                <li><a href="#">For companies</a></li>
-                <li><a href="#">Sign in</a></li>
+                <li><a href="#" target="_blank">On campus</a></li>
+                <li><a href="#" target="_blank">Online</a></li>
+                <li><a href="#" target="_blank">For companies</a></li>
+                <li><a href="#" target="_blank">Sign in</a></li>
             </ul>
         </nav>
     </header>
+
 <!-- BANNER -->
-    <h1>Learn something new every day</h1>
+    <section class="banner u-flex">
+        <img class="banner-img u-flex" src="./resources/images/banner.jpg" alt="Girls learning somthing new">
+        <div class="banner-text u-center u-flex u-bold">
+            <h1>Learn something new every day</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button type="button"><a href="#" target="_blank">Start here</a></button>
+        </div>
+    </section>
 
-    
+<!-- ARTICLES -->
+    <section class="information u-flex">
+        <section class="article u-flex u-left-60 mobile-hidden">
+            <img class="article-img u-flex" src="./resources/images/information-main.jpg" alt="A man learning">
+            <div class="article-text u-flex u-bold">
+                <h1>It doesn't hurt to keep practicing</h1>
+                <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q>
+                <p>Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+        </section>
+        <section class="subarticles u-flex">
+            <article class="subarticle u-flex">
+                <picture class="subarticle-picture u-flex u-p-16">
+                    <source class=" u-left-35" media="(min-width:768px)" srcset="./resources/images/information-orientation.jpg">
+                        <img class="u-flex" src="./resources/images/information-orientation-mobile.jpg" alt="girls walking on the path">
+                </picture>
+                <div class="subarticle-text u-bold">
+                    <h1>Orientation date</h1>
+                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <p><a href="#" target="_blank">Read more</a></p>
+                </div> 
+            </article>    
+            <article class="subarticle u-flex">
+                <picture class="subarticle-picture u-flex u-p-64-16">
+                    <source class=" u-left-35" media="(min-width:768px)" srcset="./resources/images/information-campus.jpg">
+                        <img class="u-flex" src="./resources/images/information-campus-mobile.jpg" alt="our campus">
+                </picture>
+                <div class="subarticle-text u-bold">
+                    <h1>Our campus</h1>
+                    <p>Find which campus is close by you</p>
+                    <p><a href="#" target="_blank">Read more</a></p>
+                </div>
+            </article>
+            <article class="subarticle u-flex">
+                <picture class="subarticle-picture u-flex u-p-64-16">
+                    <source class=" u-left-35" media="(min-width:768px)" srcset="./resources/images/information-guest-lecture.jpg">
+                        <img class="u-flex" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
+                </picture>
+                <div class="subarticle-text u-bold">
+                    <h1 class="desktop-hidden">Special guest lecture</h1>
+                    <h1 class="mobile-hidden">Our guest lecture</h1>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                    <p class="p-12-32"><a href="#" target="_blank">Read more</a></p>
+                </div>
+            </article>
+        </section>
+    </section>
 
+<!-- START LEARNING -->
+    <section class="start-learning u-flex">
+        <h1 class="u-text-center">Start learning</h1>
+        <ul class="start-cards u-flex">
+            <li class="start-card u-flex"><a href="#" target="_blank">
+                <img class="u-flex mobile-hidden" src="./resources/images/course-software.jpg" alt="desktop on the table">
+                <div class="start-card-text u-bold">
+                    <h2>Software engineering</h2>
+                    <p class="mobile-hidden">CURSES</p>
+                    <p class="mobile-hidden">Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+                </a></li>
+            <li class="start-card u-flex"><a href="#" target="_blank"><img class="u-flex mobile-hidden" src="./resources/images/course-computer-art.jpg" alt="desktop on the table">
+                <div class="start-card-text u-bold">
+                    <h2>Computer art</h2>
+                    <p class="mobile-hidden">CURSES</p>
+                    <p class="mobile-hidden">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                </div>
+            </a></li>
+            <li class="start-card u-flex"><a href="#" target="_blank">
+                <img class="u-flex mobile-hidden" src="./resources/images/course-design.jpg" alt="desktop on the table">
+                <div class="start-card-text u-bold">
+                    <h2>Design</h2>
+                    <p class="mobile-hidden">CURSES</p>
+                    <p class="mobile-hidden">User Experience Design, User Research, Visual Design</p>
+                </div>
+            </a></li>
+            <li class="start-card u-flex"><a href="#" target="_blank">
+                <img class="u-flex mobile-hidden" src="./resources/images/course-data.jpg" alt="desktop on the table">
+                <div class="start-card-text u-bold">
+                    <h2>Data</h2>
+                    <p class="mobile-hidden">CURSES</p>
+                    <p class="mobile-hidden">Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+            </a></li>
+            <li class="start-card u-flex"><a href="#" target="_blank">
+                <img class="u-flex mobile-hidden" src="./resources/images/course-business.jpg" alt="desktop on the table">
+                <div class="start-card-text u-bold">
+                    <h2>Business</h2>
+                    <p class="mobile-hidden">CURSES</p>
+                    <p class="mobile-hidden">Product Development, Business Development, Startup</p>
+                </div>
+            </a></li>
+            <li class="start-card u-flex"><a href="#" target="_blank">
+                <img class="u-flex mobile-hidden" src="./resources/images/course-marketing.jpg" alt="desktop on the table">
+                <div class="start-card-text u-bold">
+                    <h2>Marketing</h2>
+                    <p class="mobile-hidden">CURSES</p>
+                    <p class="mobile-hidden">Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+            </a></li>
+        </ul>
+    </section>
+
+<!-- THESIS EXHIBIT-->
+    <section class="thesis-exhibit">
+        <div id="thesis-exhibit">
+            <h1>Thesis exhibit</h1>
+        </div>
+        <article class="u-flex">
+            <section class="thesis-video u-flex u-left-60">
+                <video autoplay muted loop>
+                    <source src="resources/videos/thesis.mp4" type="video/mp4">
+                </video>
+                <div class="thesis-text u-flex u-bold mobile-hidden">
+                    <h1>Reimagine urban</h1>
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q>
+                </div>
+            </section>
+            <section class="thesis-articles u-flex u-right-40 mobile-hidden">
+                <article class="thesis-article u-flex"><a href="#">
+                    <img class="thesis-article-picture u-flex u-p-64-16 u-left-35" src="./resources/images/thesis-fisma.jpg" alt="someone design">
+                    <div class="thesis-article-text u-bold u-right-65">
+                        <h2>Fisma: Design and Prototype</h2>
+                        <p>Designer showcase of new prototype product</p>
+                    </div> 
+                </a></article>    
+                <article class="thesis-article u-flex">
+                    <img class="thesis-article-picture u-flex u-p-64-16 u-left-35" src="./resources/images/thesis-now-and-then.jpg" alt="New York view">   
+                    <div class="thesis-article-text u-bold u-right-65">
+                        <h2>Now and then</h2>
+                        <p>Research study about New York</p>
+                    </div>
+                </article>
+            </section>
+        </article>
+    </section>
+    <footer class="footer u-flex">
+        <div class="copyright u-flex">
+            <p>&copy; 2016 Colmar Academy All rights reserved</p>
+        </div>
+        <ul class="footer-desktop u-flex mobile-hidden">
+            <li><a href="#" target="_blank">Terms</a></li>
+            <li><a href="#" target="_blank">Privacy</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
